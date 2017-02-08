@@ -46,7 +46,8 @@ var juggleGuessLower = prompt('do you think I can juggle?');
 var juggleGuess = juggleGuessLower.toLowerCase();
 
 if (juggleGuess === 'yes' || juggleGuess === 'y') {
-  var userJuggles = prompt('that\'s right, do you?');
+  var userJugglesCase = prompt('that\'s right, do you?');
+  var userJuggles = userJugglesCase.toLowerCase();
   if (userJuggles === 'yes' || userJuggles === 'y') {
     alert('high five!');
     console.log('user can juggle');
@@ -56,8 +57,9 @@ if (juggleGuess === 'yes' || juggleGuess === 'y') {
   };
 } else {
   alert('I\'m more of dork than you think.');
-  userJuggles = prompt('Can you juggle?');
-  if (userJuggles === 'yes' || userJuggles === 'y') {
+  var userJugglesCase2 = prompt('Can you juggle?');
+  var userJuggles2 = userJugglesCase2.toLowerCase();
+  if (userJuggles2 === 'yes' || userJuggles2 === 'y') {
     alert('high five!');
     console.log('user can juggle');
   } else {
@@ -65,6 +67,11 @@ if (juggleGuess === 'yes' || juggleGuess === 'y') {
     console.log('user can not juggle');
   };
 };
+
+
+
+
+
 
 
 
