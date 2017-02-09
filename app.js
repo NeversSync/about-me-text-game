@@ -85,7 +85,21 @@ while(userBallNumberGuess !== numberCanJuggle && guesses < 3) {
 };
 console.log('user guessed ' + guesses + ' times.');
 
-var 
+var countries = ['new zealand', 'china', 'the philippines', 'taiwan', 'france', 'thailand', 'germany', 'england', 'the netherlands', 'the czech republic', 'mexico'];
+
+for(var chances = 0; chances < 6; chances++) {
+  var userCountryGuess = prompt('Now, guess a country that I\'ve juggled in.').toLowerCase();
+  for(var guessCounter = 0; guessCounter < countries.length; guessCounter++) {
+    if(userCountryGuess === countries[guessCounter]) {
+      //found it, done
+      alert('Got it!');
+      chances = 7;
+      break;
+    };
+  };
+};
+alert('Here are all the potential correct answers: ' + countries);
+
 
 
 
