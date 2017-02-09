@@ -96,7 +96,7 @@ console.log('user guessed ' + guesses + ' times.');
 var countries = ['new zealand', 'china', 'the philippines', 'taiwan', 'france', 'thailand', 'germany', 'england', 'the netherlands', 'the czech republic', 'mexico'];
 
 for(var chances = 0; chances < 6; chances++) {
-  var userCountryGuess = prompt('Now, guess a country that I\'ve juggled in.').toLowerCase();
+  var userCountryGuess = prompt('Now, guess a country that I\'ve juggled in. You have ' + chances + ' chances left.').toLowerCase();
   for(var guessCounter = 0; guessCounter < countries.length; guessCounter++) {
     if(userCountryGuess === countries[guessCounter]) {
       //found it, done
@@ -104,9 +104,9 @@ for(var chances = 0; chances < 6; chances++) {
       userCorrectAnswerCount;
       chances = 7;
       break;
-    };
-  };
-};
+    }
+  }
+}
 
 console.log('user got ' + userCorrectAnswerCount + 'questions right on the first try');
 alert('Here are all the potential correct answers: ' + countries);
