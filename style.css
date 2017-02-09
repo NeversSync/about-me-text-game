@@ -1,7 +1,41 @@
 body {
-    background-color: blanchedalmond;
-    font-family: 'Indie Flower', cursive;
+  background-image: url("https://static.wixstatic.com/media/65129d_099e26f16be248f09d82d0f90fe14eb6.jpg/v1/fill/w_1881,h_1254,al_c,q_90,usm_0.66_1.00_0.01/65129d_099e26f16be248f09d82d0f90fe14eb6.webp");
+  background-color: #cccccc;;
+  font-family: 'Indie Flower', cursive;
+  color: saddlebrown;
+  text-shadow: 2px 2px black;
 }
 
 .wrapper {
-    max-width: 100%;
+  max-width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+h1 {
+  font-size: 4em;
+  margin: 20px 130px;
+  padding: 20px 30px;
+  border: 4px solid olivedrab;
+  box-shadow: 10px 10px 5px black;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+li {
+  font-size: 1em;
+}
+
+#knowledge {
+  display: inline-block;
+  width: 30%;
+}
+#countries {
+  display: inline-block;
+  width: 30%;
+  float: right;
+}
