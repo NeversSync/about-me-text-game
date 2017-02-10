@@ -25,17 +25,17 @@ h1 {
 h3 {
   font-size: 2em;
 }
+ #left-column{
+margin:0;
+float:left;
+}
 
 li {
   font-size: 1em;
 }
 
-#knowledge {
-  display: inline-block;
-  width: 30%;
-}
-#countries {
-  display: inline-block;
-  width: 30%;
-  float: right;
+
+#right-column {
+  clear: both;
+  float:right;
 }
